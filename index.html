@@ -19,6 +19,26 @@
     })(document);
     smartlook('init', 'f9f6e89950fc21bd933c1bee9c65ba86cf7058da');
 </script>
+	<script>
+  // in this variable inser your consent
+  var consentText = 'Here goes consent text from your website.';
+
+  // choose only one variable
+  var clientDecision = true; // if user agreed and provided consent
+
+  smartlook('consentForms', clientDecision ? consentText : false);
+  smartlook('consentIP', clientDecision ? consentText : false);
+  smartlook('consentAPI', clientDecision ? consentText : false);
+</script>	
+	<script>
+  smartlook('identify', 'uid', {
+    "name": "Jo Do",
+    "email": "jo.do@smartlook.com",
+    "package": "Premium",
+    "currency": "EUR",
+    "price": 550
+  });
+</script>
 	</head>
 	<body class="is-preload">
 
